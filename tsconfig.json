@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext", // 推奨: ESNextに変更
+    "target": "ESNext",
+    "module": "ESNext", // 推奨: ESNextに変更
     "jsx": "react-jsx", // 推奨: 最新のJSX変換
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "noEmit": true, // または "emitDeclarationOnly": true
-    "allowImportingTsExtensions": true
   },
-  "include": ["src"]
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
 }

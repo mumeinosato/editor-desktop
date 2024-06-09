@@ -1,7 +1,7 @@
 import { Buffer } from 'buffer';
 import axios from 'axios';
 
-const api_url = process.env.REACT_APP_BACKEND_URL
+const api_url = "http://localhost:3000"
 
 interface RunData {
     input: string,
